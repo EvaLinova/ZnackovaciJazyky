@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatabazeKnih xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="def.xsd">
+  <knihy>
+    <kniha id="1">
+      <ces>
+        <nazev>Malý Princ</nazev>
+        <autor>Antoine de Saint-Exupéry</autor>
+      </ces>
+      <ang>
+        <nazev>The Little Prince</nazev>
+        <autor>Antoine de Saint-Exupéry</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Jiří Šeptný</jmeno_studenta>
+        <rocnik_student>3</rocnik_student>
+        <skola typ="gymnázium">Vodoparná</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>AnoNe</vydavatelstvi>
+        <jazyk>Francouzština</jazyk>
+        <rok_vydani>2015</rok_vydani>
+        <cislo_vydani>2</cislo_vydani>
+        <tloustka tloustka="cm">1</tloustka>
+        <pocet_stran jednotka_stran="strany">180</pocet_stran>
+        <obtiznost>lehké</obtiznost>
+        <cena mena="czk">120</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="2">
+      <ces>
+        <nazev>Romeo a Julie</nazev>
+        <autor>William Shakespeare</autor>
+      </ces>
+      <ang>
+        <nazev>Romeo and Juliet</nazev>
+        <autor>William Shakespeare</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="žena">Milada Jakobínková</jmeno_studenta>
+        <rocnik_student>2</rocnik_student>
+        <skola typ="vysoká škola">ČZU</skola>
+      </student>
+      <informace>
+        <litDruh>Drama</litDruh>
+        <vydavatelstvi>Albatros</vydavatelstvi>
+        <jazyk>Angličtina</jazyk>
+        <rok_vydani>2000</rok_vydani>
+        <cislo_vydani>2</cislo_vydani>
+        <tloustka tloustka="cm">1</tloustka>
+        <pocet_stran jednotka_stran="strany">125</pocet_stran>
+        <obtiznost>středně obtížné</obtiznost>
+        <cena mena="czk">120</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="3">
+      <ces>
+        <nazev>Krakatit</nazev>
+        <autor>Karel Čapek</autor>
+      </ces>
+      <ang>
+        <nazev>Krakatit</nazev>
+        <autor>Karel Čapek</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Jiří Špatný</jmeno_studenta>
+        <rocnik_student>3</rocnik_student>
+        <skola typ="gymnázium">Vodoparná</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>Azox</vydavatelstvi>
+        <jazyk>Čeština</jazyk>
+        <rok_vydani>2001</rok_vydani>
+        <cislo_vydani>5</cislo_vydani>
+        <tloustka tloustka="cm">2</tloustka>
+        <pocet_stran jednotka_stran="strany">198</pocet_stran>
+        <obtiznost>obtížné</obtiznost>
+        <cena mena="czk">200</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="4">
+      <ces>
+        <nazev>Let It Snow</nazev>
+        <autor>John Green</autor>
+      </ces>
+      <ang>
+        <nazev>Let It Snow</nazev>
+        <autor>John Green</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Ben Dumal</jmeno_studenta>
+        <rocnik_student>5</rocnik_student>
+        <skola typ="základní škola">Selnická</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>AnoNe</vydavatelstvi>
+        <jazyk>Angličtina</jazyk>
+        <rok_vydani>2019</rok_vydani>
+        <cislo_vydani>1</cislo_vydani>
+        <tloustka tloustka="cm">2</tloustka>
+        <pocet_stran jednotka_stran="strany">250</pocet_stran>
+        <obtiznost>středně obtížné</obtiznost>
+        <cena mena="czk">289</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="5">
+      <ces>
+        <nazev>Oliver Twist</nazev>
+        <autor>Charles Dickens</autor>
+      </ces>
+      <ang>
+        <nazev>Oliver Twist</nazev>
+        <autor>Charles Dickens</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Jiří Špatný</jmeno_studenta>
+        <rocnik_student>3</rocnik_student>
+        <skola typ="gymnázium">Vodoparná</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>Albatros</vydavatelstvi>
+        <jazyk>Angličtina</jazyk>
+        <rok_vydani>1978</rok_vydani>
+        <cislo_vydani>2</cislo_vydani>
+        <tloustka tloustka="cm">5</tloustka>
+        <pocet_stran jednotka_stran="strany">200</pocet_stran>
+        <obtiznost>středně obtížné</obtiznost>
+        <cena mena="czk">200</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="6">
+      <ces>
+        <nazev>Hřbitovní kvítí</nazev>
+        <autor>Jan Neruda</autor>
+      </ces>
+      <ang>
+        <nazev>Hřbitovní kvítí</nazev>
+        <autor>Jan Neruda</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Jiří Špatný</jmeno_studenta>
+        <rocnik_student>3</rocnik_student>
+        <skola typ="gymnázium">Vodoparná</skola>
+      </student>
+      <informace>
+        <litDruh>Lyrika</litDruh>
+        <vydavatelstvi>Azox</vydavatelstvi>
+        <jazyk>Čeština</jazyk>
+        <rok_vydani>1999</rok_vydani>
+        <cislo_vydani>2</cislo_vydani>
+        <tloustka tloustka="cm">1</tloustka>
+        <pocet_stran jednotka_stran="strany">50</pocet_stran>
+        <obtiznost>velmi obtížné</obtiznost>
+        <cena mena="czk">199</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="7">
+      <ces>
+        <nazev>Norské dřevo</nazev>
+        <autor>Haruki Murakami</autor>
+      </ces>
+      <ang>
+        <nazev>Norwegian Wood</nazev>
+        <autor>Haruki Murakami</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="žena">Milada Jakobínková</jmeno_studenta>
+        <rocnik_student>2</rocnik_student>
+        <skola typ="vysoká škola">ČZU</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>AnoNe</vydavatelstvi>
+        <jazyk>Japonština</jazyk>
+        <rok_vydani>2015</rok_vydani>
+        <cislo_vydani>4</cislo_vydani>
+        <tloustka tloustka="cm">3</tloustka>
+        <pocet_stran jednotka_stran="strany">300</pocet_stran>
+        <obtiznost>obtížné</obtiznost>
+        <cena mena="czk">298</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="8">
+      <ces>
+        <nazev>Paní Bovaryová</nazev>
+        <autor>Gustave Flaubert</autor>
+      </ces>
+      <ang>
+        <nazev>Madame Bovary</nazev>
+        <autor>Gustave Flaubert</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Jiří Špatný</jmeno_studenta>
+        <rocnik_student>3</rocnik_student>
+        <skola typ="gymnázium">Vodoparná</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>Azox</vydavatelstvi>
+        <jazyk>Francouzština</jazyk>
+        <rok_vydani>2000</rok_vydani>
+        <cislo_vydani>2</cislo_vydani>
+        <tloustka tloustka="cm">2</tloustka>
+        <pocet_stran jednotka_stran="strany">250</pocet_stran>
+        <obtiznost>středně obtížné</obtiznost>
+        <cena mena="czk">245</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="9">
+      <ces>
+        <nazev>Máj</nazev>
+        <autor>Karel H. Mácha</autor>
+      </ces>
+      <ang>
+        <nazev>Máj</nazev>
+        <autor>Karel H. Mácha</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Ben Dumal</jmeno_studenta>
+        <rocnik_student>5</rocnik_student>
+        <skola typ="základní škola">Selnická</skola>
+      </student>
+      <informace>
+        <litDruh>Lyrika</litDruh>
+        <vydavatelstvi>AnoNe</vydavatelstvi>
+        <jazyk>Čeština</jazyk>
+        <rok_vydani>2019</rok_vydani>
+        <cislo_vydani>5</cislo_vydani>
+        <tloustka tloustka="cm">1</tloustka>
+        <pocet_stran jednotka_stran="strany">180</pocet_stran>
+        <obtiznost>obtížné</obtiznost>
+        <cena mena="czk">250</cena>
+      </informace>
+    </kniha>
+
+    <kniha id="10">
+      <ces>
+        <nazev>David Copperfield</nazev>
+        <autor>Charles Dickens</autor>
+      </ces>
+      <ang>
+        <nazev>David Copperfield</nazev>
+        <autor>Charles Dickens</autor>
+      </ang>
+      <student>
+        <jmeno_studenta gender="muž">Jiří Šeptný</jmeno_studenta>
+        <rocnik_student>3</rocnik_student>
+        <skola typ="gymnázium">Vodoparná</skola>
+      </student>
+      <informace>
+        <litDruh>Epika</litDruh>
+        <vydavatelstvi>Albatros</vydavatelstvi>
+        <jazyk>Angličtina</jazyk>
+        <rok_vydani>2009</rok_vydani>
+        <cislo_vydani>2</cislo_vydani>
+        <tloustka tloustka="cm">2</tloustka>
+        <pocet_stran jednotka_stran="strany">250</pocet_stran>
+        <obtiznost>lehké</obtiznost>
+        <cena mena="czk">199</cena>
+      </informace>
+    </kniha>
+ </knihy>
+</DatabazeKnih>

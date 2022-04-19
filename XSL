@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:template match="/">
+DatabazeKnih;knihy;kniha;ces;nazev;autor;informace;cena;
+<xsl:for-each select="knihy/kniha/informace">
+  <xsl:sort select="cena"/>
+  <xsl:if test="cena > 50">
+    <xsl:value-of select="nazev"/>
+    <xsl:value-of select="autor"/>
+    <xsl:value-of select="informace"/>
+    <xsl:value-of select="cena"/>
+  </xsl:if>
+</xsl:for-each>
+
+    <html>
+      <head>
+      </head>
+      <body>
+        <h2>Databáze Knih</h2>
+        <xsl:apply-templates/>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="ces">
+    <p>
+      <xsl:apply-templates select="nazev"/>
+      <xsl:apply-templates select="autor"/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="ang">
+    <p>
+      <xsl:apply-templates select="nazev"/>
+      <xsl:apply-templates select="autor"/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="nazev">
+    Název: <span style="color:black">
+    <xsl:value-of select="."/></span>
+    <br />
+  </xsl:template>
+
+  <xsl:template match="autor">
+    Autor: <span style="color:black">
+    <xsl:value-of select="."/></span>
+    <br />
+  </xsl:template>
+
+  <xsl:template match="informace">
+  <p>
+  <xsl:apply-templates select="litDruh"/>
+  <xsl:apply-templates select="vydavatelstvi"/>
+  <xsl:apply-templates select="jazyk"/>
+  <xsl:apply-templates select="rok_vydani"/>
+  <xsl:apply-templates select="pocet_stran"/>
+  <xsl:apply-templates select="obtiznost"/>
+  <xsl:apply-templates select="cena"/>
+  </p>
+</xsl:template>
+
+<xsl:template match="litDruh">
+  Literární druh: <span style="color:black">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="vydavatelstvi">
+  Vydavatelství: <span style="color:black">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="jazyk">
+  Jazyk: <span style="color:black">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="rok_vydani">
+  Rok vydání: <span style="color:black">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="pocet_stran">
+  Počet stran: <span style="color:black">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="obtiznost">
+  Obtížnost: <span style="color:red">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="cena">
+  Cena: <span style="color:red">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+</xsl:stylesheet>

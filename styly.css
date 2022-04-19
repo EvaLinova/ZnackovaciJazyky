@@ -1,0 +1,67 @@
+body{
+    background-color: #c3e8fa;
+    font-family: Calibri;
+    margin: 10px;
+}
+
+nav{
+    padding: 1rem;
+    background-color: #99e6ff;
+    text-decoration: none;
+}
+
+a{
+    color: #2828a4;
+    padding: 3rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+
+}
+
+figure img {
+  width: 1000pt;
+}
+
+figcaption{
+  text-align: center;
+}
+
+h1{
+    color: #006080;
+}
+
+h3{
+    color: #805500;
+    border-width: thin;
+    border-color: #805500;
+    border-style: groove;
+    padding: 10px;
+}
+
+h4{
+    color: #805500;
+}
+
+.h4{
+    color: red;
+}
+
+.jmenoStudenta{
+    color: #000066;
+    font-size: 15pt;
+}
+
+section{
+    padding: 2rem 0;
+}
+
+p{
+    padding: 5px;
+}
+
+footer{
+    padding: 3rem 0;
+}

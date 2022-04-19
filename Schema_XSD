@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="DatabazeKnih">
+     <xs:complexType>
+       <xs:sequence>
+        <xs:element name="knihy" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+       </xs:sequence>
+     </xs:complexType>
+   </xs:element>
+
+<xs:element name="knihy">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="kniha"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="kniha">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ces"/>
+      <xs:element name="ang"/>
+      <xs:element name="student"/>
+      <xs:element name="informace"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="student">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="jmeno_studenta" type="xs:string"/>
+      <xs:element name="rocnik_student" type="xs:integer"/>
+      <xs:element name="skola" type="typ_skoly"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="informace">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="litDruh" type="xs:string"/>
+      <xs:element name="vydavatelstvi" type="xs:string"/>
+      <xs:element name="jazyk" type="xs:string"/>
+      <xs:element name="rok_vydani" type="xs:integer"/>
+      <xs:element name="cislo_vydani" type="xs:integer"/>
+      <xs:element name="tloustka" type="xs:integer"/>
+      <xs:element name="pocet_stran" type="xs:integer"/>
+      <xs:element name="obtiznost" type="xs:string"/>
+      <xs:element name="cena" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!-- Skupiny značek -->
+<xs:group name="ces">
+  <xs:annotation>
+    <xs:documentation>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nazev" type="xs:string"/>
+      <xs:element name="autor" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:documentation>
+</xs:annotation>
+</xs:group>
+
+<xs:group name="ang">
+  <xs:annotation>
+    <xs:documentation>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nazev" type="xs:string"/>
+      <xs:element name="autor" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:documentation>
+</xs:annotation>
+</xs:group>
+
+<!-- Atributy pro koncové značky -->
+<xs:element name="jmeno_studenta">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="gender" type="gender_slovne"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="rocnik_student">
+</xs:element>
+
+<xs:element name="skola">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="typ" type="typ_skoly"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="litDruh">
+</xs:element>
+<xs:element name="vydavatelstvi">
+</xs:element>
+<xs:element name="jazyk">
+</xs:element>
+<xs:element name="rok_vydani">
+</xs:element>
+<xs:element name="obtiznost">
+</xs:element>
+
+<xs:element name="tloustka">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="tloustka" type="tloustka_slovne"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="pocet_stran">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="jednotka" type="jednotka_stran"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="cena">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="mena" type="jednotka_men"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<!-- Datové typy -->
+<xs:simpleType name="gender_slovne">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="muž"/>
+    <xs:enumeration value="žena"/>
+    <xs:enumeration value="jiné"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jednotka_rocnik">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="ročník"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="typ_skoly">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="základní škola"/>
+    <xs:enumeration value="gymnázium"/>
+    <xs:enumeration value="střední škola"/>
+    <xs:enumeration value="vysoká škola"/>
+    <xs:enumeration value="učiliště"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tloustka_slovne">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="cm"/>
+    <xs:enumeration value="inch"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jednotka_stran">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="strany"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jednotka_men">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="czk"/>
+    <xs:enumeration value="eur"/>
+    <xs:enumeration value="dolary"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang ='cs'>
+<head>
+  <title>ZápočtovýProjekt_ZnačkovacíJazyky</title>
+  <meta charset='utf-8'>
+  <meta name='description' content=''>
+  <meta name='keywords' content=''>
+  <meta name='author' content=''>
+  <meta name='robots' content='all'>
+  <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+  <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+  <link rel="stylesheet" type="text/css" href="styly.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="#uvod">Úvod</a>
+        <a href="#cil_prace">Cíl práce</a>
+        <a href="#metodika">Metodika</a>
+        <a href="#teoreticka_cast">Teoretická část</a>
+        <a href="#prakticka_cast">Praktická část</a>
+      </nav>
+      <div>
+        <h1>Bakalářská práce</h1>
+        <p>Tato část vypracovaného zápočtového projektu je určen pro předmět Značkovací Jazyky.</p>
+        <p>Je to HTML část projektu s využitím kaskádového stylu.</p>
+        <p>Obsahuje cíl, metodiku a stručný popis teoretické a praktické části mé bakalářské práce.</p>
+      </div>
+      <div>&nbsp;</div>
+      <hr>
+      <div>&nbsp;</div>
+    </header>
+    <main>
+      <article id="uvod">
+        <h2>Umělá inteligence ve vzdělávání</h2>
+        <span class="jmenoStudenta">Lin JingXian</span>
+        <div>&nbsp;</div>
+        <figure>
+          <img src="https://www.bozpforum.cz/wp-content/uploads/2020/11/Umela-inteligence.jpg">
+          <figcaption>Umělá inteligence</figcaption>
+        </figure>
+      </article>
+      <!-- Zde mohu využít i <section> -->
+      <section id="cil_prace">
+        <h3>Cíl práce</h3>
+        <h4>Hlavní cíl práce:</h4>
+        <p>Hlavním cílem práce je <strong>pochopit význam umělé inteligence ve vzdělávání.</strong>.</p>
+        <div>&nbsp;</div>
+        <h4>Dílčí cíle práce:<span class="h4"> *</span></h4>
+        <ul>
+          <li>Analyzovat současný stav poznání.</li>
+          <li>Pochopit, co je to umělá inteligence.</li>
+          <li>Zanalyzovat výhody a nevýhody umělé inteligence.</li>
+          <li>Vyjádřit se k budoucnosti umělé inteligence.</li>
+          <li>Vytvořit adaptivní test pro otestování úrovně studenta.</li>
+        </ul>
+        <aside><span class="h3">* </span>Dílčí části cíle nám pomáhá snadněji se dostat k hlavním cíli, většinou jsou tři a více.</aside>
+      </section>
+        <section id="metodika">
+          <h3>Metodika</h3>
+          <p>Teoretická část obsahuje vědomosti založené na studiu vědecké a odborné literatury.</p>
+          <p>Praktická část pak využije tyto vědomosti získané ze studia vědecké a odborné literatury k vytvoření adaptivního testu pro testování studenta. Na základě výsledků bude vytvořen závěr práce.</p>
+        </section>
+        <section id="teoreticka_cast">
+          <h4>Teoretická část</h4>
+          <p>V teoretickém části se nejprve zaměřím na pojem umělá inteligence, dále jak funguje a jak se využívá ve vzdělávání jak pro studenty, tak i pro vyučující.</p>
+          <p>Podívala bych se i do historie umělé inteligence a její využití v domácnosti. Našla bych si příklady softwarů, které využíváme ve vzdělávání a další technologie.</p>
+          <p>Nakonec bych zanalyzovala využití umělé inteligence ve vzdělávání v Českém republice.</p>
+        </section>
+        <section id="prakticka_cast">
+          <h4>Praktická část</h4>
+          <p>V praktickém části se budu hlavně zabývat adaptivním testováním.</p>
+          <p>Naprogramovala bych program, který by dokázal otestovat studenty s tím, že po každém vyhodnocení program dokáže určit a zařadit do jakého levelu či kategorie student patří.</p>
+      </section>
+    </main>
+   <footer>
+     <div>Copyright 2022 Lin JingXian</div>
+     <div>Tento dokument byl vytvořen dne 15.4.2022</div>
+   </footer>
+  </body>
+</html>
